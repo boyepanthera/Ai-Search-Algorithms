@@ -112,10 +112,10 @@ def estimate_path_with_a_star (start_node ,goal_node, heuristic_function, test_c
                 path_string += p
 
         # Print Path arrow string
-        print(f"Robot path with A* and {heuristic_function.__name__.replace("_", " ")} from", start_node, "to", goal_node, ":",  path_string)
+        print(f"Robot path with A* and {heuristic_function.__name__.replace('_',' ')} from", start_node, "to", goal_node, ":",  path_string)
         return  path,  path_string
     else:
-        print(f"No valid path found for Robot using A* search and {heuristic_function.__name__.replace("_", " ")} between", start_node, "and", goal_node)
+        print(f"No valid path found for Robot using A* search and {heuristic_function.__name__.replace('_', ' ')} between", start_node, "and", goal_node)
         return None
     
 
